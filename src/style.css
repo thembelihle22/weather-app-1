@@ -4,10 +4,17 @@ body {
 }
 h1 {
   text-align: center;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
 }
 h2 {
   text-align: center;
   font-size: 50px;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 p {
   text-align: center;
@@ -17,27 +24,49 @@ li {
   list-style: none;
   display: inline-block;
   padding: 30px;
-  background-color: white;
 }
 a {
   text-decoration-line: none;
 }
-a:hover {
-  color: white;
-  transition: 200ms ease-in-out;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 .weatherApp {
-  background-color: rgba(#596e79, 0, 0, 1);
+  background-color: rgba(225, 225, 225, 0.4);
   opacity: 0, 6;
   margin: 70px auto;
   padding-top: 10px;
   border-radius: 10px;
   max-width: 600px;
 }
-.weekDay {
-  background-color: #596e79;
+.form {
+  text-align: center;
+  padding: 20px;
+}
+.search {
+  border-radius: 45px;
+  font-size: 15px;
+  padding: 15px;
+  border: 5px;
+}
+.button {
+  border-radius: 10px;
+  font-size: 15px;
   padding: 10px;
+  color: white;
+  background-color: #ff6337;
+  border: 5px;
+}
+.weekDay {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ff6337;
+}
+a:hover {
+  color: #ff6337;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.button:hover {
+  color: #ff6337;
+  background-color: white;
+  transition: 200ms ease-in-out;
 }

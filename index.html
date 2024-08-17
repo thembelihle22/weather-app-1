@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css " />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <title>weather-app</title>
   </head>
   <body>
@@ -16,18 +22,16 @@
           Time: 19h00
         </p>
         <h2>
-          21°C
+          21°c
           <div>☀️</div>
         </h2>
       </section>
-
-      <header>
+      <section class="form">
         <form>
-          <input type="search" placeholder="Enter a city..." />
-          <input type="submit" value="Search" />
+          <input type="search" placeholder="Enter a city..." class="search" />
+          <input type="submit" value="Search" class="button" />
         </form>
-      </header>
-
+      </section>
       <div class="weekDay">
         <ul>
           <li>
