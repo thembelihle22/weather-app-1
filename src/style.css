@@ -1,0 +1,25 @@
+body {
+  background-color: grey;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 50px;
+  color: white;
+}
+a {
+  text-decoration-line: none;
+}
+a:hover {
+  color: white;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.weatherApp {
+  background-color: pink;
+  padding: 50px;
+  margin: 70px auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
