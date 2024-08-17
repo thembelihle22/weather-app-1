@@ -1,6 +1,18 @@
 body {
-  background-color: grey;
+  background-image: url(images/blurry-world-map.jpg);
+  background-size: cover;
 }
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+p {
+  text-align: center;
+}
+
 li {
   list-style: none;
   display: inline-block;
@@ -18,13 +30,14 @@ a:hover {
 }
 
 .weatherApp {
-  background-color: pink;
+  background-color: rgba(#596e79, 0, 0, 1);
+  opacity: 0, 6;
   margin: 70px auto;
-  padding-top: 50px;
+  padding-top: 10px;
   border-radius: 10px;
   max-width: 600px;
 }
 .weekDay {
-  background-color: blue;
+  background-color: #596e79;
   padding: 10px;
 }
