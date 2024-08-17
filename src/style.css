@@ -16,10 +16,15 @@ a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
 .weatherApp {
   background-color: pink;
-  padding: 50px 30px 20px 30px;
   margin: 70px auto;
+  padding-top: 50px;
   border-radius: 10px;
   max-width: 600px;
+}
+.weekDay {
+  background-color: blue;
+  padding: 10px;
 }
