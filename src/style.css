@@ -8,6 +8,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 35px;
+  margin-bottom: 5px;
 }
 h2 {
   text-align: center;
@@ -15,17 +16,18 @@ h2 {
   font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: normal;
+  margin: 10px;
 }
 p {
   text-align: center;
+  margin-bottom: 5px;
 }
-
 li {
   list-style: none;
   display: inline-block;
   padding: 30px;
   background-color: #ff6337;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border-radius: 10px;
 }
 a {
@@ -33,7 +35,7 @@ a {
 }
 .weatherApp {
   background-color: rgba(225, 225, 225, 0.4);
-  opacity: 0, 6;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   margin: 70px auto;
   padding-top: 10px;
   border-radius: 10px;
@@ -49,6 +51,7 @@ a {
   padding: 15px;
   border: 5px;
   border-color: #ff6337;
+  width: 70%;
 }
 .button {
   border-radius: 10px;
@@ -57,6 +60,8 @@ a {
   color: white;
   background-color: #ff6337;
   border: 5px;
+  width: 100px;
+  margin-left: 10px;
 }
 .weekDay {
   padding: 10px;
