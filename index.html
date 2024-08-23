@@ -15,7 +15,7 @@
   <body>
     <div class="weatherApp">
       <section>
-        <h1>Durban</h1>
+        <h1 id="h1">Durban</h1>
         <p>
           Monday, 30 July 2024
           <br />
@@ -29,8 +29,13 @@
       </section>
       <section>
         <form class="form" id="form-input">
-          <input type="search" placeholder="Enter a city..." class="search" />
-          <input type="submit" value="Search" class="button" />
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            class="search"
+            id="search"
+          />
+          <input type="submit" value="Search" class="button" id="submit" />
         </form>
       </section>
       <div class="weekDay">
