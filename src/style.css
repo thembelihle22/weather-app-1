@@ -53,6 +53,12 @@ a {
   border-color: #ff6337;
   width: 70%;
 }
+.temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
 .button {
   border-radius: 10px;
   font-size: 15px;
