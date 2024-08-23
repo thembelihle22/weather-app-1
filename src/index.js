@@ -2,7 +2,9 @@ function citySearchForm(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search");
   let cityElement = document.querySelector("#h1");
-  cityElement = searchInput.value;
+  cityElement.innerHTML = searchInput.value;
+  console.log(searchInput.value);
 }
+
 let search = document.querySelector("#form-input");
-search.addEventListener("sumbit", citySearchForm);
+search.addEventListener("submit", citySearchForm);
