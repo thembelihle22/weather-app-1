@@ -16,19 +16,22 @@
   <body>
     <div class="weatherApp">
       <section>
-        <h1 id="h1">Durban</h1>
+        <h1 id="h1"></h1>
         <p>
-          Monday, 30 July 2024
-          <br />
-          Time: 19h00
+          <span id="time">Monday, Time:19:00</span>
         </p>
         <div class="temperature">
           <div class="icon">☀️</div>
-          <div id="temp">21</div>
+          <div id="temp"></div>
           <div class="celsius">°c</div>
         </div>
 
-        <p>Humidity:60%, Wind:55 km/hr.</p>
+        <div class="conditions">
+          <div class="discription" id="discription">Partly cloudly</div>
+          Humidity:<span id="humidity">60</span>%, Wind:<span id="wind"
+            >55 </span
+          >km/hr.
+        </div>
       </section>
       <section>
         <form class="form" id="form-input">
@@ -69,7 +72,7 @@
           </li>
         </ul>
 
-        <footer>
+        <footer class="footer">
           By <a href="https://github.com/thembelihle22">Thembelihle</a>, hosted
           on
           <a href="https://github.com/thembelihle22/weather-app-1">Github</a>

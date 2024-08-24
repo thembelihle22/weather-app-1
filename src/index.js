@@ -1,3 +1,20 @@
+function currentWeekDay(date) {
+  let weekDay = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = weekDay[date.getDay()];
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+
+  return `${day}, Time: ${hours}:${minutes}`;
+}
+
 function weatherForecast(response) {
   let temperature = response.data.temperature.current;
   let temperatureElement = document.querySelector("#temp");
@@ -5,6 +22,19 @@ function weatherForecast(response) {
 
   let cityElement = document.querySelector("#h1");
   cityElement.innerHTML = response.data.city;
+
+  let conditionElement = document.querySelector("#discription");
+  conditionElement.innerHTML = response.data.condition.description;
+
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.temperature.humidity;
+
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = response.data.wind.speed;
+
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+  timeElement.innerHTML = currentWeekDay(date);
 }
 
 function cityWeather(city) {
@@ -23,4 +53,4 @@ function citySearchForm(event) {
 let search = document.querySelector("#form-input");
 search.addEventListener("submit", citySearchForm);
 
-citySearchForm(Durban);
+cityWeather(Durban);

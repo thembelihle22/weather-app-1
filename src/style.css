@@ -41,6 +41,9 @@ a {
   border-radius: 10px;
   max-width: 600px;
 }
+.conditions {
+  text-align: center;
+}
 .form {
   text-align: center;
   padding: 20px;
@@ -83,4 +86,7 @@ a:hover {
   color: #ff6337;
   background-color: white;
   transition: 200ms ease-in-out;
+}
+.footer {
+  text-align: center;
 }
