@@ -44,6 +44,10 @@ a {
 .conditions {
   text-align: center;
 }
+.celsius {
+  font-size: 30px;
+  height: 55px;
+}
 .form {
   text-align: center;
   padding: 20px;

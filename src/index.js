@@ -11,6 +11,9 @@ function currentWeekDay(date) {
   let day = weekDay[date.getDay()];
   let hours = date.getHours();
   let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
 
   return `${day}, Time: ${hours}:${minutes}`;
 }
@@ -35,6 +38,9 @@ function weatherForecast(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
   timeElement.innerHTML = currentWeekDay(date);
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon">`;
 }
 
 function cityWeather(city) {
